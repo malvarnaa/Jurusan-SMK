@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+nav {
+    background-color: #ffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.255);
+    display: flex;
+    padding: 0 100px;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav div img {
+width: 50px;
+display: flex;
+align-items: center;
+margin-top: 8px;
+}
+
+nav h5{
+    display: flex;
+    color: #213555;
+    align-items: center;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+header h1 {
+    display: flex;
+    margin-right: -50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    padding: 20px;
+}
+
+.departments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.department {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.department h2 {
+    margin-bottom: 15px;
+}
+
+.button {
+    background-color: #2e3162;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #404376;
+}
+
+footer {
+    background-color: #2e3162;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .departments {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .department {
+        width: 90%;
+    }
+}
